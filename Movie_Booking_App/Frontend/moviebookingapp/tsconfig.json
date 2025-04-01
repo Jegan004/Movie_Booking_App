@@ -1,0 +1,22 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
+
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // Use the new JSX transform
+    "esModuleInterop": true, // Allow importing of non-ES modules
+    "moduleResolution": "node", // Make sure TypeScript resolves modules like Jest does
+    "types": ["jest", "node"] // Include Jest types globally
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ]
+}
